@@ -1,0 +1,331 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*header styling*/
+.container {
+    background-color: #FFA100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+    box-shadow: 2px 4px 4px 8px hsla(233, 91%, 47%, 0.192);
+}
+/*logo styling*/
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    float: inline-start;
+}
+
+.logo img {
+    height: 80px;
+    border-radius: 50%;
+    width: 80px;
+    margin-right: 20px;
+}
+.logo h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #00008b;
+    vertical-align: bottom;
+}
+
+ /*navbar section*/
+ nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  text-align: center;
+  margin: 0 10px;
+}
+nav a {
+  color: #00008b;
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 0;
+  margin-right: 0;
+  text-decoration: none;
+}
+nav ul li a:hover{
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+.bbb {
+  display: inline-flex;
+  position: relative;
+  margin-left: 0;
+  font-weight: bold;
+  padding: 20px;
+  justify-content: flex-end;
+  padding: 10px;
+  background-color: #00008b;
+  color: #FFA100;
+  border-radius: 5px;
+  align-items: center;
+  text-align: center;
+}
+.bbb:hover {
+  transform: scale(1.1);
+  text-decoration: wavy;
+}
+.active{
+  text-decoration: underline;
+  transform: #00008b;
+}
+/*main section*/
+.hero-text {
+    padding-top: 15rem;
+    text-align: center;
+    color: darkblue;
+    background-image: url(./Assets/grass-2616911_1280.jpg);
+    background-position: center;
+    margin-bottom: 0;
+    margin-bottom: 20px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: bold;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-text p {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #00008b;
+
+}
+.hero-text .btn {
+    background-color: #FFA100;
+    color: #00008b;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+.hero-text .btn:hover {
+    transform: scale(1.1);
+    background-color: #00008b;
+    color: #FFA100;
+    transition: 0.3s ease-in;
+    text-decoration: underline;
+}
+/*images styling*/
+.photogallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .photos {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  img {
+    height: 100px;
+    width: 100px;
+  }
+  h3 {
+    color: darkblue;
+    text-align: center;
+    font-size: 50px;
+
+  }
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.photos:hover{
+  cursor: pointer;
+
+}
+.contact-container {
+    background-color: #FFA100;
+    width: 250px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 20px;
+    justify-content: center;
+  }
+  input {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .contact-container button {
+    background-color: #00008b;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    color: #FFA100;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    padding: 20px;
+    gap: 5px;
+  }
+
+  /*contact form*/
+  .contact-container {
+    background-color: #f5f4f2;
+    width: 350px;
+    margin: 0 auto;
+    border-radius: 20px;
+    height: 350px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    color: #00008b;
+  }
+  #contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  form {
+    margin: 2rem;
+    padding: 2rem;
+  }
+  
+  #contact form input, #contact form textarea {
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+  }
+  
+  #contact form button {
+    background-color: #00008b;
+    border-radius: 5px;
+    color: #FFA100;
+    border: none;
+    font-weight: bold;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    padding: 20px;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+  
+  #contact form button:hover {
+    background-color: #fff;
+    color: #00008b;
+    transform: scale(1.1);
+  }
+
+  /*footer section*/
+  footer p {
+    color: #00008b;
+  }
+  
+  .footer {
+   background-color: #FFA100;
+   color: #00008b;
+   text-align: center;
+   padding: 15px;
+   font-weight: bold;
+   width: 100%;
+   overflow-x: hidden;
+   margin: auto;
+  }
+  
+  /*links section*/
+  .social-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    display: flex;
+    color: #00008b;
+  }
+  .social-links li {
+    margin: 0 10px;
+   padding-bottom: 10px;
+  }
+  
+  .social-links li i {
+    color: #00008b;
+    position: relative;
+    font-size: 20px;
+    padding-top: 10px;
+  }
+  .social-links li i:hover {
+  transform: scale(1.1);
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    overflow: hidden;
+    width: 100%;
+  }
+  .footer-container p{
+    margin: 20px;
+  }
+
+  .icon-container {
+    display: flex;
+    flex-direction: row;
+
+  }
+/*media queries*/
+@media (max-width: 600px) {
+  .container {
+      height: 300px; 
+  }
+  .photogallery {
+      grid-template-columns: 1fr; 
+  }
+  .photos {
+      width: 90%; 
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo img {
+      max-height: 50px;
+  }
+  nav ul {
+      flex-direction: row; 
+  }
+}
+@media (orientation: landscape) {
+  .photogallery{
+    width: 100%;
+  }
+}
